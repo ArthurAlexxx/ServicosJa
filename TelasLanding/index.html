@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        
+
+        p span {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .imglogo{
+            width: 200px;
+            height: 60px;
+            padding-top: 10px;
+        }
+
+        .btnInscrever{
+            width: 180px;
+        }
+        
+        .IconInscrever{
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        .IconInscrever2{
+            font-size: 21px;
+        }
+
+        #navbar{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #navbar a:hover{
+            color: #6a6e1d;
+        }
+
+        #navbar a.active{
+            border-bottom: 1px solid #FBFFAC;
+        }
+
+        #navlink{
+            font-weight: bolder;
+            color: black;
+        }
+
+
+        #ListaNav{
+            font-size: 14px;
+        }
+
+        .btngeral:hover {
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .card:hover{
+            box-shadow: 10px 5px 5px rgba(238, 243, 174, 0.349);
+            transform: translateY(-3px);
+        }
+
+        .Ivantagem:hover{
+            color: #6a6e1d;
+        }
+
+        .PlanoCard {
+            width: 100%;
+            max-width: 350px;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .PlanoCard:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-price {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .plan-description {
+            font-size: 1.1rem;
+            color: #777;
+        }
+
+    </style>
+<body>
+    <div class="navbar-content">
+        <nav style="font-family: 'Montserrat', sans-serif;" id="navbar" class="navbar navbar-expand-sm bg-white p-0 m-0 fixed-top">
+            <div class="container">
+                <div class="navbar-brand me-auto">
+                    <img class="imglogo" src="/Images/logoo.png" alt="">
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto gap-5 justify-content-center fw-normal">
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link active" href="">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="/TelaMarket/market.html">Serviços</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-4">
+                            <a id="navlogin" style="color: #000000" class="navLogin nav-link fw-bold" href="/TelasCadastro/login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/TelasCadastro/cadastro.html" style="background-color: #FBFFAC; width: 180px; text-decoration: none;" id="BtnCadastro" class="btngeral btn text-black fw-bold">
+                                <i class="IconInscrever bi bi-person-add"></i> Cadastre-se</a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<main>
+<section style="margin-top: 150px;" class=""> 
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12 text-center text-lg-start" id="MenuEsquerda">
+                <h1 style="font-size: 50px; font-family: Montserrat, sans-serif; padding-top: 100px;" class="text-black fw-bold">Seu trabalho. <br> Nosso mundo. <br> Uma conexão!</h1>
+                <p style="font-size: 20px;" class="pt-2 pb-5 text-black fw-normal">Quando você valoriza o que é local, transforma sua realidade e abre portas para um mundo de oportunidades.</p>
+                <a href="/TelasCadastro/cadastro.html" style="background-color: #FBFFAC; width: 100%; max-width: 400px; height: 70px; font-size: 25px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;" class="btngeral btn text-black fw-bold">
+                    Cadastre-se agora <i class="ps-5 IconInscrever2 bi bi-chevron-double-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block text-center">
+                <img class="img-fluid" style="border-radius: 25px;" src="/Images/94525849_10062774.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr style="width: 25%; margin: 0 auto; border: 1px solid #000000; margin-bottom: 150px; margin-top: 150px;">
+
+<section style="background-image: linear-gradient(to bottom, #ffffff, #fffbff, #fff6f7, #fff3e7, #fff5d9, #fff5d9, #fff5d9, #fff5d9, #fff3e7, #fff6f7, #fffbff, #ffffff);">
+    <div class="container pb-3">   
+        <h1 style="font-size: 2.5rem; font-family: Montserrat, sans-serif;" class="fw-bold text-center pb-1">Não sabe como começar?</h1>
+        <p style="font-size: 1.25rem;" class="fw-normal text-center">De uma olhada nos <span style="font-weight: bold;">pequenos passos</span> para iniciar uma nova etapa na sua vida</p>
+    </div>
+    
+    <div class="container d-flex flex-column gap-5">
+        <div id="step2" style="font-family: Montserrat, sans-serif;" class="d-flex flex-column w-100 gap-5">
+            <div class="w-100">
+                <div class="d-flex flex-column flex-lg-row mx-auto gap-5 align-items-center pb-4">
+                    <div class="w-100">
+                        <span style="font-size: 2rem;" class="fw-bold">Faça seu cadastro &nbsp</span><i style="font-size: 2rem;" class="bi bi-check-lg"></i><br>
+                        <span style="font-size: 1.2rem;" class="d-block mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, ipsa natus. Corrupti labore fuga recusandae neque officia quisquam eos, iste ad nihil natus doloribus corporis vel, velit consectetur molestias similique?.</span>
+                        <div class="pt-3">
+                            <a href="/TelasCadastro/cadastro.html" style="background-color: #ffffff; width: 100%; max-width: 300px; height: 50px; font-size: 1.25rem; border-radius: 20px; text-decoration: none; color: white;" class="btngeral btn text-black fw-bold text-center">
+                                Cadastre-se agora
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <img style="width: 100%; max-width: 500px;" class="rounded" src="/Images/Bricklayer-bro.png" alt="">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row mx-auto gap-5 align-items-center pb-4">
+                    <div class="d-none d-lg-block">
+                        <img style="width: 100%; max-width: 500px;" class="rounded" src="/Images/Electrician-bro.png" alt="">
+                    </div>
+                    <div class="w-100">
+                        <span style="font-size: 2rem;" class="fw-bold">Divulgue seu trabalho &nbsp</span><i style="font-size: 2rem;" class="bi bi-box-seam"></i><br>
+                        <span style="font-size: 1.2rem;" class="d-block mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, ipsa natus. Corrupti labore fuga recusandae neque officia quisquam eos, iste ad nihil natus doloribus corporis vel, velit consectetur molestias similique?.</span>
+                        <div class="pt-3">
+                            <button style="background-color: #ffffff; width: 100%; max-width: 300px; height: 50px; font-size: 1.25rem; border-radius: 20px;" class="btngeral btn fw-bold"><a class="text-black" style="text-decoration: none;" href="/TelaMarket/form.html">Cadastre seu produto</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row mx-auto gap-5 align-items-center pb-4">
+                    <div class="w-100">
+                        <span style="font-size: 2rem;" class="fw-bold">Negocie com seu cliente &nbsp</span><i style="font-size: 2rem;" class="bi bi-cash-coin"></i><br>
+                        <span style="font-size: 1.2rem;" class="d-block mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, ipsa natus. Corrupti labore fuga recusandae neque officia quisquam eos, iste ad nihil natus doloribus corporis vel, velit consectetur molestias similique?.</span>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <img style="width: 100%; max-width: 500px;" class="rounded" src="/Images/pastry chef-bro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<hr style="width: 25%; margin: 0 auto; border: 1px solid #000000; margin-bottom: 100px; margin-top: 100px;">
+
+<section style="font-family: Montserrat, sans-serif;">
+    <div class="mb-5">
+        <h1 class="text-center fw-bold">A melhor plataforma para negócios locais</h1>
+        <p style="font-size: 20px;" class="text-center fw-normal">Conecte-se, divulgue e expanda suas oportunidades com facilidade!</p>
+    </div>
+    <div class="container d-flex flex-wrap justify-content-center gap-4">
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+                <p class="text-center pt-5 mx-4">Alcance Ampliado</p>
+                <i style="max-width: 100px; font-size: 40px;" class="bi bi-eye pt-2 Ivantagem"></i>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+                <p class="text-center pt-5 mx-4">Facilidade de Uso</p>
+                <i style="max-width: 100px; font-size: 40px;" class="bi bi-emoji-smile pt-2 Ivantagem"></i>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+                <p class="text-center pt-5 mx-4">Suporte Dedicado</p>
+                <i style="max-width: 100px; font-size: 40px;" class="bi bi-exclamation-triangle-fill pt-2 Ivantagem"></i>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+                <p class="text-center pt-5 mx-4">Negócios Locais</p>
+                <i style="max-width: 100px; font-size: 40px;" class="bi bi-boxes pt-2 Ivantagem"></i>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="container d-flex flex-wrap justify-content-center gap-4 mt-5">
+        <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+            <i style="max-width: 100px; font-size: 40px;" class="bi bi-tools pt-4 Ivantagem"></i>
+            <p class="text-center pt-4 mx-4">Variedades de Trabalho</p>
+        </div>
+        <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+            <i style="max-width: 100px; font-size: 40px;" class="bi bi-currency-exchange pt-4 Ivantagem"></i>
+            <p class="text-center pt-4 mx-4">Preços justos</p>
+        </div>
+        <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+            <i style="max-width: 100px; font-size: 40px;" class="bi bi-chat-left-quote pt-4 Ivantagem"></i>
+            <p class="text-center pt-4 mx-4">Avaliações e Comentários</p>
+        </div>
+        <div class="d-flex flex-column align-items-center rounded-3" style="width: 200px; height: 200px; box-shadow: rgba(141, 108, 35, 0.25) 10px 15px 25px -12px;">
+            <i style="max-width: 100px; font-size: 40px;" class="bi bi-truck pt-4 Ivantagem"></i>
+            <p class="text-center pt-4 mx-4">Negociação Rapida</p>
+        </div>    
+    </div>
+</section>
+
+<hr style="width: 25%; margin: 0 auto; border: 1px solid #000000; margin-bottom: 100px; margin-top: 100px;">
+
+<section style="font-family: Montserrat, sans-serif; background-image: linear-gradient(to bottom, #ffffff, #fffbff, #fff6f7, #fff3e7, #fff5d9, #fff5d9, #fff5d9, #fff5d9, #fff3e7, #fff6f7, #fffbff, #ffffff);"">
+    <h1 class="text-center py-5 text-black fw-bold">Conheça nossos planos!</h1>
+    <div class="container text-center">
+        <div class="row justify-content-center gap-4">
+
+                <div style="height: 900px;" class="PlanoCard bg-light">
+                    <h3 class="text-primary">Plano Silver</h3>
+                    <p class="plan-price">R$49/mês</p>
+                    <p class="plan-description">Ideal para quem está começando.</p>
+                    <ul style="height: 577px;" class="list-unstyled pt-5">
+                        <li><p>Destaque premium nas buscas e categorias</p></li>
+                        <li><p>Visibilidade melhorada nas buscas</p></li>
+                        <li><p>Redução de 2% nas taxas de comissão</p></li>
+                        <li><p>Suporte prioritário via chat</p></li>
+                        <li><p>Relatórios básicos de desempenho</p></li>
+                        <li><p>Limite de cadastro: 10 produtos</p></li>
+                        <li><p>Participação em promoções exclusivas</p></li>
+                        <li><p>Ferramentas básicas de marketing</p></li>
+                        <li><p>Listagem prolongada dos produtos</p></li>
+                        <li><p>Integração com redes sociais</p></li>
+                    </ul>
+                    <button class="btn btn-outline-primary mt-3"><a href="/TelasAssinatura/Assinatura.html">Assine o Prata</a></button>
+                </div>
+ 
+                <div style="height: 900px;" class="PlanoCard bg-warning text-black">
+                    <h3 class="text-black">Plano Gold</h3>
+                    <p class="plan-price">R$99/mês</p>
+                    <p class="plan-description">Plano popular para expandir seu negócio.</p>
+                    <ul style="height: 577px;" class="list-unstyled pt-3 text-black">
+                        <li><p>Máxima visibilidade com destaque prioritário</p></li>
+                        <li><p>Destaque premium nas buscas e categorias</p></li>
+                        <li><p>Redução de 5% nas taxas de comissão</p></li>
+                        <li><p>Suporte prioritário via chat e e-mail</p></li>
+                        <li><p>Relatórios avançados de vendas e tendências</p></li>
+                        <li><p>Limite de cadastro: 20 produtos</p></li>
+                        <li><p>Participação em promoções e campanhas premium</p></li>
+                        <li><p>Ferramentas avançadas de marketing</p></li>
+                        <li><p>Listagem prolongada com renovação automática</p></li>
+                        <li><p>Integração com redes sociais e Google Ads</p></li>
+                    </ul>
+                    <button class="btn btn-light mt-3"><a href="/TelasAssinatura/Assinatura.html">Assine o Ouro</a></button>
+                </div>
+    
+                <div class="PlanoCard bg-info text-black">
+                    <h3 class="text-black">Plano Diamond</h3>
+                    <p class="plan-price">R$199/mês</p>
+                    <p class="plan-description">Para empresas que buscam o máximo desempenho.</p>
+                    <ul style="height: 577px;" class="list-unstyled p-3">
+                        <li><p>Máxima visibilidade com destaque prioritário</p></li>
+                                <li><p>Redução de 10% nas taxas de comissão</p></li>
+                                <li><p>Suporte dedicado 24/7 via chat, e-mail e telefone</p></li>
+                                <li><p>Relatórios detalhados e insights de mercado</p></li>
+                                <li><p>Cadastro ilimitado de produtos</p></li>
+                                <li><p>Acesso exclusivo a campanhas e promoções especiais</p></li>
+                                <li><p>Ferramentas de marketing profissional</p></li>
+                                <li><p>Listagem vitalícia dos produtos</p></li>
+                                <li><p>Integração com redes sociais, Google Ads e Facebook Ads</p></li>
+                    </ul>
+                    <button class="btn btn-light mt-3"><a href="/TelasAssinatura/Assinatura.html">Assine o Diamante</a></button>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+<hr style="width: 25%; margin: 0 auto; border: 1px solid #000000; margin-bottom: 70px; margin-top: 70px;">
+
+<section>
+    <div class="container">
+        <div class="text-center pb-4">
+            <h1 style="font-family: Montserrat, sans-serif; font-size: 50px;" class="text-center fw-bold pb-1">FAQ</h1>
+        </div>
+            <div class="d-flex flex-column align-items-center w-75 mx-auto">
+                <button style="border: 1px solid black;" class="btn my-3 w-100">
+                    <a style="text-decoration: none;" href=""><p class="my-auto text-black">Como posso cadastrar meu trabalho ou serviço na plataforma?</p></a>
+                </button>
+                <button style="border: 1px solid black;" class="btn my-3 w-100">
+                    <a style="text-decoration: none;" href=""><p class="my-auto text-black">A plataforma é gratuita?</p></a>
+                </button>
+                <button style="border: 1px solid black;" class="btn my-3 w-100">
+                    <a style="text-decoration: none;" href=""><p class="my-auto text-black">Como posso entrar em contato com os profissionais ou clientes?</p></a>
+                </button>
+                <button style="border: 1px solid black;" class="btn my-3 w-100">
+                    <a style="text-decoration: none;" href=""><p class="my-auto text-black">Posso atualizar minhas ofertas ou informações a qualquer momento?</p></a>
+                </button>
+                <button style="border: 1px solid black;" class="btn my-3 w-100">
+                    <a style="text-decoration: none;" href=""><p class="my-auto text-black">Como a plataforma ajuda a aumentar a visibilidade do meu negócio?</p></a>
+                </button>
+            </div>
+        <div class="w-75 mx-auto align-items-center">
+            <p>Nao encontrou sua duvida? entre em contato diretamento com o suporte <a href="">aqui.</a></p>
+        </div>
+    </div>
+</section>
+</main>
+<footer style="background-image: linear-gradient(to top, #ffffff, #f1e5a5); color: rgb(0, 0, 0); margin-top: 120px;" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <h5 class="fw-bold">Sobre Nós</h5>
+                <p class="mb-0">No ServiçosJá, conectamos talentos locais a novas oportunidades, promovendo o crescimento e a visibilidade de negócios da sua região. Nossa plataforma é simples, eficiente e dedicada a fortalecer a economia local. Junte-se a nós e expanda seu alcance!</p>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                <h5 class="fw-bold">Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="" class="text-black text-decoration-none">Início</a></li>
+                    <li><a href="" class="text-black text-decoration-none">Sobre</a></li>
+                    <li><a href="" class="text-black text-decoration-none">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-end">
+                <h5 class="fw-bold">Siga-nos</h5>
+                <div>
+                    <a href="#" class="text-black me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-black me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-black"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <p class="mb-0">© 2024 ServiçosJá. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
+
+
